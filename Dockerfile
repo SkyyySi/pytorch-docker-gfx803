@@ -36,7 +36,7 @@ RUN wget https://github.com/xuhuisheng/rocm-gfx803/releases/download/rocm500/tor
 RUN wget https://github.com/xuhuisheng/rocm-gfx803/releases/download/rocm500/torchvision-0.12.0a0+2662797-cp38-cp38-linux_x86_64.whl
 RUN apt-get install --allow-downgrades -y ./hsa-rocr_1.7.0.50300-63.20.04_amd64.deb ./rocblas_2.45.0.50300-63.20.04_amd64.deb
 RUN yes | python -m pip install --upgrade pip wheel
-RUN yes | python -m pip install diffusers huggingface-hub transformers
+RUN yes | python -m pip install diffusers huggingface-hub transformers accelerate
 RUN yes | python -m pip install torch-1.11.0a0+git503a092-cp38-cp38-linux_x86_64.whl torchvision-0.12.0a0+2662797-cp38-cp38-linux_x86_64.whl
 ENV LD_LIBRARY_PATH=/opt/rocm/lib
 
