@@ -9,3 +9,6 @@ docker run -it -v $HOME:/data --privileged --rm --device=/dev/kfd --device=/dev/
 ```
 
 where `<IMAGE_NAME>` should be printed by `docker build .` after finishing to run in this directory.
+
+**Note:** My screen goes dark when running this on my system directly. However, it works when used through an SSH
+connection, at least after killing the X server and switching to a TTY.
