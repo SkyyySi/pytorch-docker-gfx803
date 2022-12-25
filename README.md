@@ -1,6 +1,6 @@
-# Pytorch on RX590
+# Pytorch on gfx803-based GPUs
 
-This was created in order to be able to use stable diffusion on my RX590 with ROCm hardware acceleration.
+This was created in order to be able to use Stable Diffusion on my RX590 with ROCm hardware acceleration.
 
 After building this image, you can run it with
 
