@@ -2,6 +2,8 @@
 
 This was created in order to be able to use Stable Diffusion on my RX590 with ROCm hardware acceleration.
 
+This was only tested with Arch Linux. WSL most likely won't work.
+
 After building this image, you can run it with
 
 ```
@@ -20,3 +22,7 @@ Unfortunately, the older 3.5 version provided by @xuhuisheng doesn't appear to w
   2. My PC was overheating - as it turned out, my PC fans suck and didn't push enough air
 
   After adressing both of these, it worked for the most part.
+
+- **Final update**
+
+I decided to just get a new GPU, an RTX 2060 12 GB. Even that one runs *waaay* faster than my RX 590, and it does so without issues. For that reason, I cannot maintain this repo (feel free to fork it). You may also consider a Tesla P40, which will probably cost you about the same if you buy it used, and, from what I've read, seems to provide performance comparable to an RTX 3090 (though keep in mind that a lot of the cheap ones were used for crypto mining, as well as the other caviats that come with using a Tesla GPU in your PC).
